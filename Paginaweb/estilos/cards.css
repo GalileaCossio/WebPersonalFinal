@@ -1,0 +1,53 @@
+.retro-card {
+    display: inline-block;
+    gap: 10px;
+    width: 350px;
+    background-color: #e6e6fa;
+    border: 2px solid #9c9c9c;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title h3{
+    font-size: 23px;
+    color: black;
+    margin: 10px 0;
+}
+
+.card-description p{
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-btn {
+    padding: 8px 20px;
+    background-color: #9c9c9c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #727272;
+}

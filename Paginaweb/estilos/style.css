@@ -1,0 +1,62 @@
+body {
+    background-image: url(fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1000px; 
+    margin: auto;
+    gap: 5px;
+}
+
+.mangas{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.pie{
+    margin-top: 10px;
+    width: 400px;
+    height: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px; 
+  gap: 10px;
+}
+
+
