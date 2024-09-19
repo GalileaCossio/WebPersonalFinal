@@ -6,14 +6,6 @@ body {
     background-attachment: fixed;
 }
 
-.container-card{
-    width: 100%;
-    display: flex;
-    max-width: 1000px; 
-    margin: auto;
-    gap: 5px;
-}
-
 .mangas{ 
   display: flex;
   flex-direction: row;
@@ -30,7 +22,11 @@ body {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 20px;
+}
 
+.txt img{
+  height: 433px;
+  width: 399px;
 }
 
 .pie{
@@ -59,4 +55,22 @@ body {
   gap: 10px;
 }
 
+@font-face {
+  font-family: 'timesp';
+  src: url('../fonts/font1.ttf');
+}
 
+@font-face {
+  font-family: 'mustasurma';
+  src: url('../fonts/vtks.ttf');
+}
+
+@font-face {
+  font-family: 'givonic';
+  src: url('../fonts/Givonic/Givonic-Regular.otf');
+}
+
+@font-face {
+  font-family: 'punkfont';
+  src: url('../fonts/font2.otf');
+}

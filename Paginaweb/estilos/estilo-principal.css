@@ -1,12 +1,9 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'givonic', sans-serif;
     color: black;
     margin: 0;
     padding: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 50px 35px;
 }
 
 ul{
@@ -15,20 +12,35 @@ ul{
     text-align: justify;
 }
 
+h1{
+    font-family: 'mustasurma', sans-serif;
+    font-size: 50px;
+    color: rgb(165, 3, 3);
+    overflow: hidden;
+}
+
+h3{
+    font-family: 'punkfont', sans-serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
 .container {
     max-width: 100%;
     margin: auto;
-    background: #fff;
+    background: black;
     overflow: hidden;
+    border: 1px solid rgb(165, 3, 3);
+    box-shadow:  0 0 15px 15px rgb(151, 3, 3);
 }
 
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #b0b0b0, #f0f0f0);
-    padding: 4px 8px;
-    color: #333;
+    background:  black;
+    padding: 6px 10px;
+    color: rgb(165, 3, 3);
     font-weight: bold;
 }
 
@@ -68,74 +80,69 @@ ul{
     display: flex;
     gap: 5px;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
-.tabs button, .tabs input {
-    padding: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.tabs a, .tabs input {
+    padding: 3px;
 }
 
 .sidebar {
     width: 300px;
     padding: 10px;
-    background: #dbdbdb;
-    border-left: 1px solid #9c9c9c;
+    background: black;
     text-align: center;
     align-items: center;
+    color: #dbdbdb;
+    border: 5px solid rgb(165, 3, 3);
+    font-size: 18px;
 }
 
 .engagement {
     flex: 2;
-    padding: 10px;
-    background: #dbdbdb;
-    border-left: 1px solid #9c9c9c;
+    padding: 20px;
+    color: #dbdbdb;
     text-align: center;
     align-items: center;
-    font-size: 18px;
-}
-
-.player {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding-top: 20px;
+    font-size: 20px;
 }
 
 footer {
-    padding: 10px;
     text-align: center;
-    background: linear-gradient(to right, #b0b0b0, #f0f0f0);
-    padding: 4px 8px;
-    color: #333;
+    background: black;
+    padding: 4px 15px;
+    color: rgb(165, 3, 3);
     font-weight: bold;
+    border-top: 1px solid  rgb(165, 3, 3);
 }
 
 footer a {
-    color: black;
+    color: rgb(165, 3, 3);
     margin: 0 5px;
     text-decoration: none;
 }
 
-.option-btn, .button {
+.option-btn{
+    margin-top: -40px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-family: 'timesp', sans-serif;
+    font-size: 18px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    background: linear-gradient(to bottom, #f0f0f0, #b0b0b0);
-    transition: background 0.2s;
+    background: linear-gradient(to bottom, rgba(231, 14, 14), rgb(165, 3, 3));
+    transform: rotate(5deg);
+    box-shadow: 5px 10px #dbdbdb;
+    transition-duration: 0.2s;
 }
 
-.option-btn:hover, .button:hover {
-    background: linear-gradient(to bottom, #b0b0b0, #909090);
+.option-btn:hover{
+    background: linear-gradient(to bottom, rgb(165, 3, 3), black);
+    color: #dbdbdb;
+    transform: rotate(0);
+    box-shadow: none;
 }
 
 .main, .button {
@@ -144,19 +151,25 @@ footer a {
     align-items: center;
     margin-bottom: 20px;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    border: 2px solid #9c9c9c;
-    border-radius: 4px;
+    font-family: 'timesp', sans-serif;
+    font-size: 18px;
+    border: none;
     cursor: pointer;
-    background: linear-gradient(to bottom, #f0f0f0, #b0b0b0);
-    transition: background 0.2s;
+    background: linear-gradient(to bottom, rgba(231, 14, 14), rgb(165, 3, 3));
+    box-shadow: 5px 10px #dbdbdb;
+    transition-duration: 0.2s;
+    transform: skewX(20deg);
 }
 
 .main:hover, .button:hover {
-    background: linear-gradient(to bottom, #b0b0b0, #909090);
+    background: linear-gradient(to bottom, rgb(165, 3, 3), black);
+    color: #dbdbdb;
+    transform: skewX(0);
+    box-shadow: none;
 }
 
 .window-content {
     padding: 10px;
 }
+
+
