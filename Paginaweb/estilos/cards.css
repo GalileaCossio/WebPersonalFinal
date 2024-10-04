@@ -1,56 +1,119 @@
 .container-card{
-    width: 100%;
     display: flex;
-    max-width: 1000px; 
-    margin: auto;
+    flex-wrap: wrap;
     gap: 10px;
+    max-width: 100%; 
+    
 }
-
-.card {
-    display: inline-block;
-    gap: 15px;
+.card{
+    position: relative;
+    text-align: center;
     width: 400px;
-    border: 2px solid rgb(165, 3, 3);
-    box-shadow:  0 0 5px 2px rgb(151, 3, 3);
-    overflow: hidden;
-    margin: 20px auto;
-    box-sizing: border-box;
+    border: 3px solid rgb(165, 3, 3);
+    margin: 15px auto;
 }
 
 .card-header {
     position: relative;
 }
 
-.card-img {
+.card-img{
     width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
 }
 
-.card-content {
-    padding: 20px;
+.card-content{
     text-align: center;
 }
 
-.card-title {
-    font-size: 25px;
-    letter-spacing: 2px;
-    color: rgb(241, 241, 241);
-    margin: 10px 0;
+.card-title{
+    position: absolute;
+    z-index: 1;
+    top: 405px;
+    left: 45%;
+    transform: rotate(5deg);
+    padding: 15px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: black;
+    background-color: #dbdbdb;
 }
 
-.card-description {
-    font-size: 18px;
+.container-card .card:nth-child(2) .card-title{
+    top: 405px;
+    left: 60%;
+}
+
+.container-card .card:nth-child(3) .card-title{
+    top: 405px;
+    left: 60%;
+}
+
+.container-card .card:nth-child(4) .card-title{
+    top: 370px;
+    left: 60%;
+}
+
+.container-card .card:nth-child(5) .card-title{
+    top: 370px;
+    left: 42%;
+}
+
+.container-card .card:nth-child(6) .card-title{
+    top: 370px;
+    left: 60%;
+    transform: rotate(7deg);
+}
+
+.container-card .card:nth-child(7) .card-title{
+    top: 400px;
+    left: 65%;
+}
+
+.container-card .card:nth-child(8) .card-title{
+    top: 400px;
+    left: 70%;
+}
+
+.container-card .card:nth-child(9) .card-title{
+    top: 450px;
+    left: 60%;
+}
+
+.container-card .card:nth-child(10) .card-title{
+    top: 370px;
+    left: 48%;
+}
+
+.container-card .card:nth-child(11) .card-title{
+    left: 50%;
+}
+
+.container-card .card:nth-child(12) .card-title{
+    left: 60%;
+}
+
+.card-content ol{
+    list-style-type: none;
+    padding-left: 0; 
+    margin: 0;
+}
+
+.card-content ol li{
     color: #dbdbdb;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px; 
 }
 
 .card-btn {
+    width: 100%;
     padding: 6px 25px;
     background-color: #9c9c9c;
     color: black;
     border: none;
-    font-family: 'givonic', sans-serif;
+    font-family: 'timesp', sans-serif;
     font-weight: bold;
     font-size: 20px;
     background: linear-gradient(to bottom, rgba(231, 14, 14), rgb(165, 3, 3));
@@ -61,6 +124,97 @@
 .card-btn:hover {
     background: linear-gradient(to bottom, rgb(165, 3, 3), black);
     color: #dbdbdb;
-    transform: rotate(0);
     box-shadow: none;
+}
+
+
+
+/*Variantes*/
+
+.amix-card{
+    display: flex;
+    margin: auto;
+    row-gap: 10px;
+}
+
+.amix-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.amix-card-title {
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #dbdbdb;
+    margin: 5px;
+    padding: 10px;
+}
+
+.card-description {
+    font-family: 'givonic', sans-serif;
+    color: #dbdbdb;
+}
+
+.card-imgmusic{
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+.music-card-title {
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 57%;
+    transform: rotate(5deg);
+    padding: 15px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: black;
+    background-color: #dbdbdb;
+}
+.music-card-title:hover {
+    background: rgb(165, 3, 3);
+    color: #dbdbdb;
+    transform: rotate(0deg);
+}
+
+
+.container-card .card:nth-child(2) .music-card-title{
+    top: 240px;
+    left: 65%;
+}
+
+.container-card .card:nth-child(3) .music-card-title{
+    top: 240px;
+    left: 55%;
+}
+
+.container-card .card:nth-child(4) .music-card-title{
+    top: 235px;
+    left: 56%;
+}
+
+.container-card .card:nth-child(5) .music-card-title{
+    top: 200px;
+    left: 70%;
+}
+
+.card-cat-title{
+    position: absolute;
+    z-index: 1;
+    top: 255px;
+    left: 70%;
+    transform: rotate(5deg);
+    padding: 15px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: black;
+    background-color: #dbdbdb;
+}
+
+.container-card .card:nth-child(2) .card-cat-title{
+    top: 255px;
+    left: 55%;
 }

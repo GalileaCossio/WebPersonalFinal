@@ -17,6 +17,7 @@ h1{
     font-size: 50px;
     color: rgb(165, 3, 3);
     overflow: hidden;
+    letter-spacing: 3px;
 }
 
 h3{

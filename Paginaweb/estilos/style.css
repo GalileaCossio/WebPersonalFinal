@@ -6,13 +6,56 @@ body {
     background-attachment: fixed;
 }
 
-.mangas{ 
+.wrapper {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0px 9px 14px 6px rgba(165,3,3,1),
+0px 7px 13px -3px rgba(165,3,3,0.3),
+0px -3px 0px 0px rgba(165,3,3,0.2) inset;
+}
+
+.wrapper i {
+  background: rgb(165, 3, 3);
+  color: black;
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.wrapper i:first-child {
+  left: 10px;
+}
+
+.wrapper i:last-child {
+  right: 10px;
+}
+
+.wrapper i:hover{
+  background: linear-gradient(to bottom, rgb(165, 3, 3), black);
+  color: #dbdbdb;
+  box-shadow: none;
+}
+
+.wrapper .carrusel {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  gap: 20px;
+  transition: transform 0.3s ease-in-out; 
+  white-space: nowrap;
+}
+
+.carrusel img {
+  height: 600px;
+  width: 800px;  
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .txt {
